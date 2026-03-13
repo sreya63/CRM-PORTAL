@@ -1,0 +1,405 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+}
+
+/* HOME */
+.hero-section {
+  min-height: 100vh;
+  background: url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80")
+    center/cover no-repeat;
+  position: relative;
+}
+
+.hero-overlay {
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.72);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 160px 60px 60px;
+}
+
+.hero-overlay h1 {
+  font-size: 56px;
+  margin-bottom: 16px;
+}
+
+.hero-overlay p {
+  font-size: 22px;
+  max-width: 780px;
+}
+
+/* SIMPLE PAGE */
+.simple-page {
+  min-height: 100vh;
+}
+
+.dark-page {
+  background: #0b0f18;
+}
+
+.page-center {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 120px 20px 40px;
+}
+
+.white-text {
+  color: white;
+}
+
+.page-center h1 {
+  font-size: 54px;
+  margin-bottom: 16px;
+}
+
+.page-center p {
+  max-width: 750px;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+/* CONTACT */
+.contact-page {
+  background: #f4f4f4;
+  min-height: 100vh;
+  padding: 60px 30px;
+}
+
+.contact-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-container h1 {
+  font-size: 62px;
+  color: #0c1d47;
+  margin-bottom: 20px;
+}
+
+.contact-subtext {
+  max-width: 900px;
+  margin: 0 auto 70px;
+  font-size: 24px;
+  color: #44516d;
+  line-height: 1.6;
+}
+
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.contact-card {
+  background: #f8f8f8;
+  border: 1px solid #dadde5;
+  border-radius: 20px;
+  padding: 56px 34px;
+  min-height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.icon-circle {
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  border: 1px solid #d3d3d3;
+  margin: 0 auto 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #5754e8;
+}
+
+.icon-circle.filled {
+  background: #5754e8;
+  color: white;
+  border: none;
+}
+
+.contact-card h2 {
+  font-size: 28px;
+  margin-bottom: 22px;
+  color: #000;
+  line-height: 1.4;
+}
+
+.contact-card p {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+/* PRICING */
+.pricing-page {
+  min-height: 100vh;
+  background: #f2f2f2;
+  padding: 90px 40px;
+}
+
+.pricing-wrapper {
+  max-width: 1560px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.price-card {
+  background: white;
+  padding: 46px;
+  min-height: 560px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.price-card h4 {
+  color: #5c58eb;
+  letter-spacing: 1px;
+  font-size: 20px;
+  margin-bottom: 38px;
+}
+
+.price-card h1 {
+  font-size: 58px;
+  color: #1b2437;
+  margin-bottom: 18px;
+}
+
+.price-card p {
+  color: #5f6777;
+  font-size: 21px;
+  line-height: 1.7;
+  margin-bottom: 26px;
+}
+
+.price-card button {
+  margin-top: 26px;
+  width: 100%;
+  background: #5553ea;
+  color: white;
+  border: none;
+  border-radius: 18px;
+  padding: 22px;
+  font-size: 22px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.popular-text {
+  position: absolute;
+  top: -22px;
+  right: 24px;
+  color: #605ced;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* REGISTER */
+.register-page {
+  min-height: 100vh;
+  background: linear-gradient(90deg, #f7f6f5, #f1f1f8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.register-box {
+  width: 100%;
+  max-width: 980px;
+  text-align: center;
+}
+
+.register-box h1 {
+  font-size: 62px;
+  color: #0a1b47;
+  margin-bottom: 18px;
+}
+
+.register-box p {
+  font-size: 24px;
+  color: #50617c;
+  line-height: 1.7;
+  margin-bottom: 42px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="password"] {
+  width: 100%;
+  padding: 24px;
+  font-size: 20px;
+  border: 1px solid #d5d8df;
+  border-radius: 14px;
+  background: #f8f8f8;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 18px;
+  color: #0c1d47;
+  text-align: left;
+  margin-top: 8px;
+}
+
+.checkbox-row input {
+  width: 22px;
+  height: 22px;
+}
+
+.register-form button {
+  margin-top: 30px;
+  width: 280px;
+  background: linear-gradient(90deg, #b8d8b0, #79bfd9);
+  color: #0c1d47;
+  border: none;
+  padding: 22px 28px;
+  font-size: 22px;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* LOGIN */
+.login-page {
+  min-height: 100vh;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 460px;
+  background: white;
+  border-left: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+  padding: 42px 32px 48px;
+}
+
+.login-logo {
+  text-align: center;
+  font-size: 44px;
+  font-weight: 700;
+  color: #103968;
+  margin-bottom: 48px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form label {
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 12px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 16px 14px;
+  border: 1px solid #cfcfcf;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-bottom: 28px;
+}
+
+.password-wrap {
+  position: relative;
+}
+
+.password-wrap input {
+  padding-right: 46px;
+  margin-bottom: 28px;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 14px;
+  top: 16px;
+  font-size: 18px;
+  color: #888;
+}
+
+.login-form button {
+  margin-top: 10px;
+  background: #5754e8;
+  color: white;
+  border: none;
+  padding: 16px;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+  .contact-cards,
+  .pricing-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-container h1,
+  .register-box h1,
+  .page-center h1,
+  .hero-overlay h1 {
+    font-size: 40px;
+  }
+
+  .contact-subtext,
+  .register-box p,
+  .hero-overlay p {
+    font-size: 18px;
+  }
+
+  .price-card h1 {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-overlay {
+    padding: 180px 20px 40px;
+  }
+
+  .contact-page,
+  .pricing-page {
+    padding: 30px 18px;
+  }
+
+  .register-form button {
+    width: 100%;
+  }
+
+  .login-box {
+    max-width: 100%;
+  }
+}
