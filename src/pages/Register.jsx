@@ -5,11 +5,6 @@ function Register() {
     <div className="register-page">
       <div className="register-box">
         <h1>Join SHNOOR HRM For Free</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          <br />
-          Malesuada tellus vestibulum, commodo pulvinar.
-        </p>
 
         <form className="register-form">
           <input type="text" placeholder="Company Name" />
