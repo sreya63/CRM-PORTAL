@@ -7,7 +7,10 @@ function Features() {
       <Navbar />
       <div className="page-center white-text">
         <h1>Features</h1>
-        <p>Employee management, company onboarding, payroll support, user access, pricing plans, and CRM workflow tools.</p>
+        <p>
+          Employee management, company onboarding, pricing plans, user access,
+          website settings, transactions and CRM workflow tools.
+        </p>
       </div>
     </div>
   );

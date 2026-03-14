@@ -16,10 +16,11 @@
   align-items: center;
 }
 
-.logo-img {
-  width: 120px;
-  height: auto;
-  object-fit: contain;
+.logo-img-text {
+  font-size: 32px;
+  font-weight: 700;
+  color: #f0a52b;
+  letter-spacing: 1px;
 }
 
 .nav-menu {

@@ -1,9 +1,11 @@
 import React from "react";
+import Navbar from "../components/Navbar";
 
 function Pricing() {
   return (
-    <div className="pricing-page">
-      <div className="pricing-wrapper">
+    <div>
+      <Navbar />
+      <div className="pricing-page public-pricing-top">
         <div className="price-card">
           <h4>DEFAULT</h4>
           <h1>Free</h1>

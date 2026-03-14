@@ -6,11 +6,7 @@ function Navbar() {
   return (
     <header className="top-header">
       <div className="logo-box">
-        <img
-          src="https://dummyimage.com/120x90/ffffff/0b2d5c&text=SHNOOR"
-          alt="logo"
-          className="logo-img"
-        />
+        <div className="logo-img-text">SHNOOR</div>
       </div>
 
       <nav className="nav-menu">
