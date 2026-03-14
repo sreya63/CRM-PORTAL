@@ -358,7 +358,7 @@ body {
 
 .admin-sidebar {
   width: 230px;
-  background: #011631;
+  background: #d9cfd9;
   color: white;
   padding: 20px 0;
   display: flex;
@@ -373,14 +373,14 @@ body {
 }
 
 .sidebar-link {
-  color: white;
+  color: rgb(17, 12, 12);
   text-decoration: none;
   padding: 16px 24px;
   font-size: 18px;
 }
 
 .sidebar-link.active {
-  background: #f8d232;
+  background: #f0eee8;
   color: #111;
   border-radius: 4px;
 }
@@ -464,7 +464,7 @@ table td {
 
 .yellow-btn {
   display: inline-block;
-  background: #f8d232;
+  background: #d3c68f;
   color: #111;
   text-decoration: none;
   border: none;

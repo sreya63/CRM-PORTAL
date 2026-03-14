@@ -2,7 +2,7 @@ import React from "react";
 import AdminLayout from "../../components/AdminLayout";
 
 function Dashboard() {
-  const companies = JSON.parse(localStorage.getItem("companies")) || [];
+  const companies = [];
 
   const activeCompanies = companies.filter((c) => c.status === "Active").length;
   const inactiveCompanies = companies.filter((c) => c.status !== "Active").length;

@@ -14,11 +14,11 @@ function ManagerDashboard() {
         </div>
 
         <div className="manager-stat-card">
-          <h2>115</h2>
+          <h2>0</h2>
           <p>Total Employees</p>
         </div>
         <div className="manager-stat-card">
-          <h2>115</h2>
+          <h2>0</h2>
           <p>Total Active Employees</p>
         </div>
         <div className="manager-stat-card">
@@ -26,7 +26,7 @@ function ManagerDashboard() {
           <p>Total Inactive Employees</p>
         </div>
         <div className="manager-stat-card">
-          <h2>115</h2>
+          <h2>0</h2>
           <p>Employee Under You</p>
         </div>
       </div>

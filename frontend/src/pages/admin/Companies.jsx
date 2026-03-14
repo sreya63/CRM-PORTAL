@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import AdminLayout from "../../components/AdminLayout";
-import { apiEndpoints, postData } from "../../api";
+
 
 function Companies() {
   const companies = JSON.parse(localStorage.getItem("companies")) || [];
