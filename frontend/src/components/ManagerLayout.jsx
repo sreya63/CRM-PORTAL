@@ -17,23 +17,21 @@ function ManagerLayout({ title, children, mode = "manager" }) {
   ];
 
   const selfMenu = [
-    { label: "Dashboard", path: "/manager/self-dashboard" },
-    { label: "Assets", path: "/employee/assets" },
-    { label: "Holidays", path: "/employee/holidays" },
-    { label: "Appreciations", path: "/employee/appreciations" },
-    { label: "Leaves", path: "/employee/leaves" },
-    { label: "Attendance", path: "/employee/attendance" },
-    { label: "Profile", path: "/employee/profile" }
-  ];
+  { label: "Dashboard", path: "/manager/self-dashboard" },
+  { label: "Holidays", path: "/manager/holidays" },
+  { label: "Appreciations", path: "/manager/appreciations" },
+  { label: "Leaves", path: "/manager/leaves" },
+  { label: "Attendance", path: "/manager/attendance" },
+  { label: "Profile", path: "/manager/profile" }
+];
 
   const selfPaths = [
     "/manager/self-dashboard",
-    "/employee/assets",
-    "/employee/holidays",
-    "/employee/appreciations",
-    "/employee/leaves",
-    "/employee/attendance",
-    "/employee/profile"
+    "/manager/holidays",
+    "/manager/appreciations",
+    "/manager/leaves",
+    "/manager/attendance",
+    "/manager/profile"
   ];
 
   const isSelfPage = selfPaths.includes(location.pathname);
@@ -47,7 +45,6 @@ function ManagerLayout({ title, children, mode = "manager" }) {
         <div className="portal-tabs">
           <Link
             to="/manager/self-dashboard"
-            target="_blank"
             rel="noopener noreferrer"
             className={isSelfPage ? "portal-tab active-tab" : "portal-tab"}
           >
@@ -56,7 +53,6 @@ function ManagerLayout({ title, children, mode = "manager" }) {
 
           <Link
             to="/manager/dashboard"
-            target="_blank"
             rel="noopener noreferrer"
             className={!isSelfPage ? "portal-tab active-tab" : "portal-tab"}
           >
@@ -69,7 +65,6 @@ function ManagerLayout({ title, children, mode = "manager" }) {
             <Link
               key={item.path}
               to={item.path}
-              target="_blank"
               rel="noopener noreferrer"
               className={location.pathname === item.path ? "portal-link active" : "portal-link"}
             >

@@ -31,7 +31,6 @@ function EmployeeLayout({ title, children }) {
 
           <Link
             to="/employee/holidays"
-            target="_blank"
             rel="noopener noreferrer"
             className={
               location.pathname === "/employee/holidays"
@@ -44,7 +43,6 @@ function EmployeeLayout({ title, children }) {
 
           <Link
             to="/employee/appreciations"
-            target="_blank"
             rel="noopener noreferrer"
             className={
               location.pathname === "/employee/appreciations"
@@ -57,7 +55,6 @@ function EmployeeLayout({ title, children }) {
 
           <Link
             to="/employee/leaves"
-            target="_blank"
             rel="noopener noreferrer"
             className={
               location.pathname === "/employee/leaves"
@@ -70,7 +67,6 @@ function EmployeeLayout({ title, children }) {
 
           <Link
             to="/employee/attendance"
-            target="_blank"
             rel="noopener noreferrer"
             className={
               location.pathname === "/employee/attendance"
@@ -83,7 +79,6 @@ function EmployeeLayout({ title, children }) {
 
           <Link
             to="/employee/profile"
-            target="_blank"
             rel="noopener noreferrer"
             className={
               location.pathname === "/employee/profile"
