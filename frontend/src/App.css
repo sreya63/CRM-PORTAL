@@ -166,6 +166,98 @@ body {
   cursor: pointer;
 }
 
+
+/* FEATURES */ 
+.features-page{
+  width:90%;
+  margin:auto;
+}
+
+.feature-section{
+  text-align:center;
+  margin:80px 0;
+}
+
+.feature-section h2{
+  font-size:34px;
+  margin-bottom:10px;
+}
+
+.feature-subtitle{
+  color:#666;
+  margin-bottom:40px;
+}
+
+.feature-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:40px;
+}
+
+.feature-card{
+  padding:25px;
+  border-radius:10px;
+  background:#fff;
+  transition:0.3s;
+}
+
+.feature-card:hover{
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.feature-img{
+  width:120px;
+  margin-bottom:20px;
+}
+
+.feature-card h3{
+  margin-bottom:10px;
+}
+
+.feature-card p{
+  color:#666;
+  font-size:14px;
+}
+
+.connect-section{
+  text-align:center;
+  margin:100px 0;
+}
+
+.stats{
+  display:flex;
+  justify-content:center;
+  gap:80px;
+  margin:40px 0;
+}
+
+.subscribe{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+}
+
+.subscribe input{
+  padding:12px;
+  width:300px;
+  border:1px solid #ccc;
+  border-radius:5px;
+}
+
+.subscribe button{
+  padding:12px 25px;
+  background:#1f2937;
+  color:white;
+  border:none;
+  border-radius:5px;
+}
+.feature-img{
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
 /* PRICING */
 .public-pricing-top {
   padding-top: 130px;
