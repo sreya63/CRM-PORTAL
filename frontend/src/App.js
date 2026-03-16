@@ -14,10 +14,8 @@ import Subscriptions from "./pages/admin/Subscriptions";
 import AddSubscription from "./pages/admin/AddSubscription";
 import Transactions from "./pages/admin/Transactions";
 import AddTransaction from "./pages/admin/AddTransaction";
-import OfflineRequests from "./pages/admin/OfflineRequests";
 import SuperAdmin from "./pages/admin/SuperAdmin";
 import AddSuperAdmin from "./pages/admin/AddSuperAdmin";
-import WebsiteSettings from "./pages/admin/WebsiteSettings";
 
 import ManagerDashboard from "./pages/manager/ManagerDashboard";
 import EmployeesPage from "./pages/manager/EmployeesPage";
@@ -34,20 +32,12 @@ import SettingsProfilePage from "./pages/manager/SettingsProfilePage";
 import SelfDashboard from "./pages/manager/SelfDashboard";
 
 import EmployeeDashboard from "./pages/employee/EmployeeDashboard";
-import EmployeeExpensesPage from "./pages/employee/EmployeeExpensesPage";
-import AddEmployeeExpense from "./pages/employee/AddEmployeeExpense";
 import EmployeeLeavesPage from "./pages/employee/EmployeeLeavesPage";
 import AddEmployeeLeave from "./pages/employee/AddEmployeeLeave";
 import EmployeeHolidaysPage from "./pages/employee/EmployeeHolidaysPage";
 
-import EmployeeAssetsPage from "./pages/employee/EmployeeAssetsPage";
 import EmployeeAppreciationsPage from "./pages/employee/EmployeeAppreciationsPage";
 import EmployeeAttendancePage from "./pages/employee/EmployeeAttendancePage";
-import EmployeeOffboardingsPage from "./pages/employee/EmployeeOffboardingsPage";
-import EmployeeLetterHeadsPage from "./pages/employee/EmployeeLetterHeadsPage";
-import EmployeePayrollPage from "./pages/employee/EmployeePayrollPage";
-import EmployeeCompanyPoliciesPage from "./pages/employee/EmployeeCompanyPoliciesPage";
-import EmployeeCustomDataFieldsPage from "./pages/employee/EmployeeCustomDataFieldsPage";
 import EmployeeProfilePage from "./pages/employee/EmployeeProfilePage";
 
 import "./App.css";
@@ -70,10 +60,8 @@ function App() {
         <Route path="/superadmin/add-subscription" element={<AddSubscription />} />
         <Route path="/superadmin/transactions" element={<Transactions />} />
         <Route path="/superadmin/add-transaction" element={<AddTransaction />} />
-        <Route path="/superadmin/offline-requests" element={<OfflineRequests />} />
         <Route path="/superadmin/super-admin" element={<SuperAdmin />} />
         <Route path="/superadmin/add-super-admin" element={<AddSuperAdmin />} />
-        <Route path="/superadmin/website-settings" element={<WebsiteSettings />} />
 
         <Route path="/manager/dashboard" element={<ManagerDashboard />} />
         <Route path="/manager/self-dashboard" element={<SelfDashboard />} />
@@ -96,22 +84,18 @@ function App() {
         <Route path="/manager/settings-profile" element={<SettingsProfilePage />} />
 
         <Route path="/employee/dashboard" element={<EmployeeDashboard />} />
-        <Route path="/employee/expenses" element={<EmployeeExpensesPage />} />
-        <Route path="/employee/add-expense" element={<AddEmployeeExpense />} />
+    
         <Route path="/employee/leaves" element={<EmployeeLeavesPage />} />
         <Route path="/employee/add-leave" element={<AddEmployeeLeave />} />
         <Route path="/employee/holidays" element={<EmployeeHolidaysPage />} />
 
-        <Route path="/employee/assets" element={<EmployeeAssetsPage />} />
+     
         <Route path="/employee/appreciations" element={<EmployeeAppreciationsPage />} />
         <Route path="/employee/attendance" element={<EmployeeAttendancePage />} />
-        <Route path="/employee/offboardings" element={<EmployeeOffboardingsPage />} />
-        <Route path="/employee/letter-heads" element={<EmployeeLetterHeadsPage />} />
-        <Route path="/employee/payroll" element={<EmployeePayrollPage />} />
-        <Route path="/employee/company-policies" element={<EmployeeCompanyPoliciesPage />} />
-        <Route path="/employee/custom-data-fields" element={<EmployeeCustomDataFieldsPage />} />
+        
+  
         <Route path="/employee/profile" element={<EmployeeProfilePage />} />
-        </Routes>
+      </Routes>
     </Router>
   );
 }

@@ -7,7 +7,7 @@ function EmployeeLayout({ title, children }) {
 
   const handleLogout = () => {
     localStorage.removeItem("loggedInEmployee");
-    navigate("/login");
+    navigate("/");
   };
 
   return (
@@ -15,36 +15,24 @@ function EmployeeLayout({ title, children }) {
       <aside className="portal-sidebar">
         <div className="portal-logo">SHNOOR</div>
 
-        <div className="portal-tabs">
-          <span className="portal-tab active-tab">Self</span>
-          <span className="portal-tab">Manager</span>
-        </div>
-
         <div className="portal-menu">
           <Link
             to="/employee/dashboard"
+            target="_blank"
+            rel="noopener noreferrer"
             className={
               location.pathname === "/employee/dashboard"
                 ? "portal-link active"
                 : "portal-link"
             }
           >
-            Dashboard
-          </Link>
-
-          <Link
-            to="/employee/assets"
-            className={
-              location.pathname === "/employee/assets"
-                ? "portal-link active"
-                : "portal-link"
-            }
-          >
-            Assets
+            Employee Dashboard
           </Link>
 
           <Link
             to="/employee/holidays"
+            target="_blank"
+            rel="noopener noreferrer"
             className={
               location.pathname === "/employee/holidays"
                 ? "portal-link active"
@@ -56,6 +44,8 @@ function EmployeeLayout({ title, children }) {
 
           <Link
             to="/employee/appreciations"
+            target="_blank"
+            rel="noopener noreferrer"
             className={
               location.pathname === "/employee/appreciations"
                 ? "portal-link active"
@@ -67,6 +57,8 @@ function EmployeeLayout({ title, children }) {
 
           <Link
             to="/employee/leaves"
+            target="_blank"
+            rel="noopener noreferrer"
             className={
               location.pathname === "/employee/leaves"
                 ? "portal-link active"
@@ -78,6 +70,8 @@ function EmployeeLayout({ title, children }) {
 
           <Link
             to="/employee/attendance"
+            target="_blank"
+            rel="noopener noreferrer"
             className={
               location.pathname === "/employee/attendance"
                 ? "portal-link active"
@@ -88,73 +82,9 @@ function EmployeeLayout({ title, children }) {
           </Link>
 
           <Link
-            to="/employee/offboardings"
-            className={
-              location.pathname === "/employee/offboardings"
-                ? "portal-link active"
-                : "portal-link"
-            }
-          >
-            Offboardings
-          </Link>
-
-          <Link
-            to="/employee/letter-heads"
-            className={
-              location.pathname === "/employee/letter-heads"
-                ? "portal-link active"
-                : "portal-link"
-            }
-          >
-            Letter Heads
-          </Link>
-
-          <Link
-            to="/employee/expenses"
-            className={
-              location.pathname === "/employee/expenses"
-                ? "portal-link active"
-                : "portal-link"
-            }
-          >
-            Expenses
-          </Link>
-
-          <Link
-            to="/employee/payroll"
-            className={
-              location.pathname === "/employee/payroll"
-                ? "portal-link active"
-                : "portal-link"
-            }
-          >
-            Payroll
-          </Link>
-
-          <Link
-            to="/employee/company-policies"
-            className={
-              location.pathname === "/employee/company-policies"
-                ? "portal-link active"
-                : "portal-link"
-            }
-          >
-            Company Policies
-          </Link>
-
-          <Link
-            to="/employee/custom-data-fields"
-            className={
-              location.pathname === "/employee/custom-data-fields"
-                ? "portal-link active"
-                : "portal-link"
-            }
-          >
-            Custom Data Fields
-          </Link>
-
-          <Link
             to="/employee/profile"
+            target="_blank"
+            rel="noopener noreferrer"
             className={
               location.pathname === "/employee/profile"
                 ? "portal-link active"

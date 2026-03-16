@@ -5,13 +5,6 @@ function ManagerDashboard() {
   return (
     <ManagerLayout title="Dashboard" mode="manager">
       <div className="manager-top-grid">
-        <div className="manager-card large">
-          <h3>Attendances</h3>
-          <div className="attendance-actions">
-            <button className="blue-btn">Clock In</button>
-            <button className="blue-btn">Clock Out</button>
-          </div>
-        </div>
 
         <div className="manager-stat-card">
           <h2>0</h2>

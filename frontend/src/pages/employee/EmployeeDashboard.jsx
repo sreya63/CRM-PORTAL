@@ -30,7 +30,6 @@ function EmployeeDashboard() {
           <p>Approved: 0</p>
           <p>Rejected: 0</p>
           <p>Pending: 0</p>
-          <button className="blue-btn-link plain-btn">Apply New Leave</button>
         </div>
       </div>
     </EmployeeLayout>

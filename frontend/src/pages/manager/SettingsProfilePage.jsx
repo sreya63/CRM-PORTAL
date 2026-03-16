@@ -105,14 +105,6 @@ function SettingsProfilePage() {
           >
             Roles & Permissions
           </p>
-
-          <p>Employee Work</p>
-          <p>Currencies</p>
-          <p>Locations</p>
-          <p>Pdf Fonts</p>
-          <p>HRM Settings</p>
-          <p>Payroll Settings</p>
-          <p>Email Settings</p>
         </div>
 
         <div className="settings-form-card">
